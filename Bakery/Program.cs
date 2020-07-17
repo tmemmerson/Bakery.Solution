@@ -48,9 +48,11 @@ namespace Bakery
         Console.WriteLine(breadCount);
         Console.WriteLine(pastryCount);
         int freeBread = breadCount / 2;
-        int pastryDiscountedBundles = pastryCount / 3; 
-        Console.WriteLine(freeBread);
-        Console.WriteLine(pastryDiscountedBundles);
+        int pastryDiscountedBundles = pastryCount / 3;
+        int pastrySingles = pastryCount % 3; 
+        Console.WriteLine("free bread loaves: " + freeBread);
+        Console.WriteLine("pastry bundles: " + pastryDiscountedBundles);
+        Console.WriteLine("pastry singles: " + pastrySingles);
       }
       else
       {
