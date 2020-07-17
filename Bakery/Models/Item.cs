@@ -1,6 +1,6 @@
-namespace ProjectName
+namespace Bakery
 {
-  public class ClassName
+  public class Item
   {
     // properties, constructors, methods, etc. go here
     }
