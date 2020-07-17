@@ -22,7 +22,9 @@ _c# Bakery order app utilizing order discounts and BOGO offers._
 
 | Spec 	| Input 	| Output 	|
 |-	|-	|-	|
-
+| greet user with order prompt and item prices 	| dotnet run 	| "welcome to our bakery. we sell bread loaves for $5 or B2GOF. We also sell pastries for $2 or 3 for $5. 	|
+| allow user to specify a quantity of bread and pastries to purchase 	| bread: 2<br>pastries: 3 	| order: 2x bread<br>       3x pastries 	|
+| return order total with applied promotions 	| bread: 2<br>pastries: 3 	| order total: <br>3x bread (B2GOF) = $10<br>3x pastries (3For$5) = $5<br>_______________________________<br>total: $15.00 	|
 
 <br>
 
