@@ -19,7 +19,7 @@ namespace Bakery
       Console.WriteLine("Would you like to add an item to your list or view your list? Add/View");
       string userResponse = Console.ReadLine();
 
-      if (userResponse.ToUpper() == "ADD")
+/*       if (userResponse.ToUpper() == "ADD")
       {
         Console.WriteLine("Enter the description of your to-do item: ");
         Item newItem = new Item(Console.ReadLine());
@@ -36,7 +36,7 @@ namespace Bakery
       else
       {
         Console.WriteLine("Please enter either 'Add' or 'View'");
-      }
+      } */
       Start();
     }
   }
