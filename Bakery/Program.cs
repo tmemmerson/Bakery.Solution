@@ -45,19 +45,20 @@ namespace Bakery
         Console.WriteLine("Pastries: " + pastryResponse);
         int breadCount = Int32.Parse(breadResponse);
         int pastryCount = Int32.Parse(pastryResponse);
-        Console.WriteLine(breadCount);
-        Console.WriteLine(pastryCount);
         int freeBread = breadCount / 2;
         int pastryDiscountedBundles = pastryCount / 3;
         int pastrySingles = pastryCount % 3;
         int breadTotal = breadCount + freeBread;
-        
-        Console.WriteLine("ORDER RECEIPT: ");
-        Console.WriteLine("Bread Loaves: " + breadCount); 
-        Console.WriteLine("Free Bread Loaves: " + freeBread);
-        Console.WriteLine("Total Loaves: " + breadTotal);
-        Console.WriteLine("Pastries (3 count): " + pastryDiscountedBundles);
-        Console.WriteLine("Pastries (single count): " + pastrySingles);
+        Console.WriteLine(" ________Receipt____________________");
+        Console.WriteLine("|                                   |");
+        Console.WriteLine("| Loave(s): " + breadCount); 
+        Console.WriteLine("| Free Loave(s): " + freeBread);
+        Console.WriteLine("| Total: " + breadTotal);
+        Console.WriteLine("|___________________________________|");
+        Console.WriteLine("| Pastries (3 ct.): " + pastryDiscountedBundles);
+        Console.WriteLine("| Pastries (1 ct.): " + pastrySingles);
+        Console.WriteLine("| Total: " + pastryCount);
+        Console.WriteLine("|___________________________________|");
       }
       else
       {
