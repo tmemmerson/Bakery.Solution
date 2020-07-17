@@ -10,17 +10,19 @@ namespace Bakery
   {
     static void Main()
     {
-      Console.WriteLine("     _|=|__________");
-      Console.WriteLine("    /               ");
-      Console.WriteLine("   /Emmerson's Bakery");
-      Console.WriteLine("  /__________________ ");
-      Console.WriteLine("   ||  || /--| ||  ||");
-      Console.WriteLine("   ||  || | .| ||  ||");
-      Console.WriteLine("   ||__||_|__|_||__||");
-      Console.WriteLine("   |-|-|-|====|-|-|-| ");
-      Console.WriteLine("^^^^^^^^^^====^^^^^^^^^^^");
-      Console.WriteLine("Welcome to Emmerson's Bakery");
-      Console.WriteLine("----------------------------");
+      Console.WriteLine("             _|=|__________");
+      Console.WriteLine("            /               ");
+      Console.WriteLine("           /Emmerson's Bakery");
+      Console.WriteLine("          /__________________ ");
+      Console.WriteLine("           ||  || /--| ||  ||");
+      Console.WriteLine("           ||  || | .| ||  ||");
+      Console.WriteLine("           ||__||_|__|_||__||");
+      Console.WriteLine("           |-|-|-|====|-|-|-| ");
+      Console.WriteLine("        ^^^^^^^^^^====^^^^^^^^^^^");
+      Console.WriteLine(" ");
+      Console.WriteLine("       ----------------------------");      
+      Console.WriteLine("       Welcome to Emmerson's Bakery");
+      Console.WriteLine("       ----------------------------");
       Console.WriteLine(" ");
       Console.WriteLine("Menu:");
       Console.WriteLine(" ");
@@ -46,18 +48,26 @@ namespace Bakery
         int breadCount = Int32.Parse(breadResponse);
         int pastryCount = Int32.Parse(pastryResponse);
         int freeBread = breadCount / 2;
-        int pastryDiscountedBundles = pastryCount / 3;
+        int pastryBundles = pastryCount / 3;
         int pastrySingles = pastryCount % 3;
         int breadTotal = breadCount + freeBread;
-        Console.WriteLine(" ________Receipt____________________");
-        Console.WriteLine("|                                   |");
+        int pastrySinglesCost = pastrySingles * 2;
+        int pastryBundlesCost = pastryBundles * 5;
+        int pastryTotalCost = pastrySinglesCost + pastryBundlesCost;
+        int breadTotalCost = breadCount * 5;
+        Console.WriteLine(" ___________________________________");
+        Console.WriteLine("|              RECEIPT              |");
+        Console.WriteLine("|___________________________________|");
         Console.WriteLine("| Loave(s): " + breadCount); 
         Console.WriteLine("| Free Loave(s): " + freeBread);
-        Console.WriteLine("| Total: " + breadTotal);
+        Console.WriteLine("| Total Quantity: " + breadTotal);
+        Console.WriteLine("| Loaves Total: $" + breadTotalCost +".00");
         Console.WriteLine("|___________________________________|");
-        Console.WriteLine("| Pastries (3 ct.): " + pastryDiscountedBundles);
+        Console.WriteLine("|                                   |");
+        Console.WriteLine("| Pastries (3 ct.): " + pastryBundles);
         Console.WriteLine("| Pastries (1 ct.): " + pastrySingles);
-        Console.WriteLine("| Total: " + pastryCount);
+        Console.WriteLine("| Total Quantity: " + pastryCount);
+        Console.WriteLine("| Pastries Total: $" + pastryTotalCost +".00");
         Console.WriteLine("|___________________________________|");
       }
       else
