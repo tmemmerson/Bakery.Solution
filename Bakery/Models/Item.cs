@@ -4,8 +4,13 @@ using System.Linq;
 
 namespace Bakery.Models
 {
-  public class Item
+  public class PastryItem
   {
     // properties, constructors, methods, etc. go here
-    }
+  }
+
+    public class BreadItem
+  {
+    // properties, constructors, methods, etc. go here
+  }
   }

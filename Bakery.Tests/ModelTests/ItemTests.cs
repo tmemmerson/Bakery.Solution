@@ -5,14 +5,15 @@ using System.Collections.Generic;
 using System.Linq;
 
 namespace Bakery.TestsTools
-
 {
   [TestClass]
   public class ItemTests
   {
     [TestMethod]
-    public void 
+    public void ConstructBreadItem_CreateBreadInstance_Bread()
     {
+      BreadItem bread = new BreadItem();
+      Assert.AreEqual(typeof(BreadItem), bread.GetType());
     }
 
   }
