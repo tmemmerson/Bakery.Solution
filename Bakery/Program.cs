@@ -27,7 +27,21 @@ namespace Bakery
       Console.WriteLine("____________Current Promotions_____________");
       Console.WriteLine("Pastries Promotion: 3x for $5");
       Console.WriteLine("Bread Promotion: Buy 2 Get 1 Free");
-      
+      Console.WriteLine("___________________________________________");
+      Console.WriteLine("Would you like to place an order? YES/NO");
+      string orderResponse =  Console.ReadLine();
+      if (orderResponse == "YES" || orderResponse == "yes" || orderResponse == "Yes") //need to implement toUpper to standardize string evaluation
+      {
+        Console.WriteLine("yes I want an order");
+      }
+      else
+      {
+        Console.WriteLine("no thanks");
+      }
+        
+
+
+
      /*  Start(); */
     }
 
