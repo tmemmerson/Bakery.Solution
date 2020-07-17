@@ -4,9 +4,9 @@
 
 <br>
 
-*EDIT* # __
+# _The Bakery_
 
-*EDIT* #### __	
+#### _a simple c# bakery order application_	
 
 #### By _**Tristan Emmerson**_
 
@@ -14,11 +14,11 @@
 
 ## **DESCRIPTION**
 
-*EDIT* __
+_c# Bakery order app utilizing order discounts and BOGO offers._
 
 <br>
 
-*EDIT* ## **SPECIFICATIONS**
+## **SPECIFICATIONS**
 
 | Spec 	| Input 	| Output 	|
 |-	|-	|-	|
@@ -30,9 +30,9 @@
 
 *  _Recommended browser for everything in life. [Google Chrome](https://www.google.com/chrome/)_.
 
-*EDIT* *  _Github [repository](https://github.com/tmemmerson/)_
+*  _Github [repository](https://github.com/tmemmerson/Bakery.Solution.git)_
 
-*EDIT* *  _Live [demo](https://tmemmerson.github.io/)_
+
 
 *  **Windows/Mac Users:** If modifying for personal use, dl Git [here](https://git-scm.com/downloads/) (v2.62.2)
 
@@ -50,27 +50,30 @@
 
 ## **PROTECTING YOUR DATA**
 
-*EDIT* * Step 0: go to $URL$ and sign up for an account to get a free API key
 
 * Step 1: create a .gitignore file in the top level of your project directory. populate the file as shown in step 1 of the image below.
 
-* Step 2: commit that .gitignore file (this prevents your sensitive information like your API key being shown to others). **DO NOT PROCEED TO STEP 3 UNTIL YOU DO THIS!**
+* Step 2: commit that .gitignore file as shown in image below(this prevents your sensitive information from being shown to others). **DO NOT PROCEED UNTIL YOU DO THIS!**
 
-* Step 3: create a .env file in the top level of your project directory. populate the file as shown in step 3 of the image below _(replacing YourKeyGoesHere with the API key you received from step 0)_
+![setup](https://coding-assets.s3-us-west-2.amazonaws.com/img/readme-image-2.jpg "Set up instructions")
 
-![setup](https://coding-assets.s3-us-west-2.amazonaws.com/img/readme-image.jpg "Set up instructions")
+1. This program utilizes .NET version 3.1, and requires this framework to be pre-installed:
+    * Please go to https://dotnet.microsoft.com/download/dotnet-core/3.1 and install the SDK   version 3.1 or greater patch version, but do not upgrade to a higher minor version number.
+2. Clone this repository onto your computer: https://github.com/...
+3. In your preferred terminal window, navigate into PROJECTNAME.SOLUTIONS/PROJECTNAME using cd (i.e. cd desktop/PROJECTNAME.SOLUTIONS/PROJECTNAME) and open the project with your preferred code editor.
+4. Run the following terminal command: $ dotnet restore
+5. To initiate this terminal program, run the command: $ dotnet run
+6. To run the test suite included with this project, within the terminal navigate into PROJECTNAME.TESTS and run the following commands:
+    * $ dotnet restore
+    * $ dotnet test
 
-* Step 4: in your terminal type "npm install" and submit. this will install the files necessary to utilize this app.
 
-* Step 5: in your terminal type "npm run build". this will build the app and place those files in a directory labeled "/dist". From here, you can right-click the index.html file and open in your browser or simply drag-and-drop into a browser window. 
-
-* Step 6: enjoy
 
 <br>
 
 ## **Known Bugs**
 
-*EDIT* _**No Known Bugs:**7/3/2020_
+*EDIT* _**No Known Bugs:**7/17/2020_
 
 <br>
 
