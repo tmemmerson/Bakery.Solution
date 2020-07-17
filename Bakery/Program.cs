@@ -32,9 +32,9 @@ namespace Bakery
       Console.WriteLine("|     Pastries Promotion: 3x for $5         |");          
       Console.WriteLine("|     Bread Promotion: Buy 2 Get 1 Free     |");
       Console.WriteLine("|___________________________________________|");
-      Console.WriteLine("Would you like to place an order? YES/NO");
+      Console.WriteLine("Would you like to place an order? Y/N");
       string orderResponse =  Console.ReadLine();
-      if (orderResponse == "YES" || orderResponse == "yes" || orderResponse == "Yes") //need to implement toUpper to standardize string evaluation
+      if (orderResponse == "yes" || orderResponse == "Y" || orderResponse == "y") //need to implement toUpper to standardize string evaluation
       {
         Console.WriteLine("How many loaves of bread would you like to purchase?");
         string breadResponse = Console.ReadLine();
@@ -49,10 +49,15 @@ namespace Bakery
         Console.WriteLine(pastryCount);
         int freeBread = breadCount / 2;
         int pastryDiscountedBundles = pastryCount / 3;
-        int pastrySingles = pastryCount % 3; 
-        Console.WriteLine("free bread loaves: " + freeBread);
-        Console.WriteLine("pastry bundles: " + pastryDiscountedBundles);
-        Console.WriteLine("pastry singles: " + pastrySingles);
+        int pastrySingles = pastryCount % 3;
+        int breadTotal = breadCount + freeBread;
+        
+        Console.WriteLine("ORDER RECEIPT: ");
+        Console.WriteLine("Bread Loaves: " + breadCount); 
+        Console.WriteLine("Free Bread Loaves: " + freeBread);
+        Console.WriteLine("Total Loaves: " + breadTotal);
+        Console.WriteLine("Pastries (3 count): " + pastryDiscountedBundles);
+        Console.WriteLine("Pastries (single count): " + pastrySingles);
       }
       else
       {
