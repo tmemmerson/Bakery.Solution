@@ -20,9 +20,9 @@ namespace Bakery
       Console.WriteLine("           |-|-|-|====|-|-|-| ");
       Console.WriteLine("        ^^^^^^^^^^====^^^^^^^^^^^");
       Console.WriteLine(" ");
-      Console.WriteLine("       ----------------------------");      
-      Console.WriteLine("       Welcome to Emmerson's Bakery");
-      Console.WriteLine("       ----------------------------");
+      Console.WriteLine("      ----------------------------");      
+      Console.WriteLine("      Welcome to Emmerson's Bakery");
+      Console.WriteLine("      ----------------------------");
       Console.WriteLine(" ");
       Console.WriteLine(" ____________________MENU____________________");
       Console.WriteLine("|                                            |");
