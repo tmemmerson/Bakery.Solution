@@ -22,8 +22,8 @@ _c# Bakery order app utilizing order discounts and BOGO offers._
 
 | Spec 	| Input 	| Output 	|
 |-	|-	|-	|
-| greet user with order prompt and item prices 	| dotnet run 	| "welcome to our bakery. we sell bread loaves for $5 or B2GOF. We also sell pastries for $2 or 3 for $5. 	|
-| allow user to specify a quantity of bread and pastries to purchase 	| bread: 2<br>pastries: 3 	| order: 2x bread<br>       3x pastries 	|
+| greet user with order prompt and item prices 	| dotnet run 	| "welcome to our bakery. we sell bread loaves for $5 <br>or B2GOF. We also sell pastries for $2 or 3 for $5. 	|
+| allow user to specify a quantity of <br>bread & pastries to purchase 	| bread: 2<br>pastries: 3 	| order: 2x bread<br>       3x pastries 	|
 | return order total with applied promotions 	| bread: 2<br>pastries: 3 	| order total: <br>3x bread (B2GOF) = $10<br>3x pastries (3For$5) = $5<br>_______________________________<br>total: $15.00 	|
 
 <br>
@@ -40,7 +40,7 @@ _c# Bakery order app utilizing order discounts and BOGO offers._
 
 * Download [Visual Studio Code](https://code.visualstudio.com/) (v1.45)
 
-* Download ZIP [here](https://github.com/tmemmerson/currency-exchanger4.git) OR if you are comfortable cloning a repo, copy the link as shown below.
+* Download ZIP [here](https://github.com/tmemmerson/Bakery.Solution.git) OR if you are comfortable cloning a repo, copy the link as shown below.
 
 ![cloning](https://coding-assets.s3-us-west-2.amazonaws.com/img/clone.gif "How to clone repo")
 
@@ -57,7 +57,7 @@ _c# Bakery order app utilizing order discounts and BOGO offers._
 
 * Step 2: commit that .gitignore file as shown in image below(this prevents your sensitive information from being shown to others). **DO NOT PROCEED UNTIL YOU DO THIS!**
 
-![setup](https://coding-assets.s3-us-west-2.amazonaws.com/img/readme-image-2.jpg "Set up instructions")
+![setup](https://coding-assets.s3-us-west-2.amazonaws.com/img/readme-image-3.jpg "Set up instructions")
 
 1. This program utilizes .NET version 3.1, and requires this framework to be pre-installed:
     * Please go to https://dotnet.microsoft.com/download/dotnet-core/3.1 and install the SDK   version 3.1 or greater patch version, but do not upgrade to a higher minor version number.
