@@ -4,17 +4,16 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Bakery.TestsTools
+namespace Bakery.Tests
 {
   [TestClass]
-  public class ItemTests
+  public class BakeryTests
   {
     [TestMethod]
-    public void ConstructBreadItem_CreateBreadInstance_Bread()
+    public void BreadConstructor_CreateInstanceOfBread_Bread()
     {
-      BreadItem bread = new BreadItem();
-      Assert.AreEqual(typeof(BreadItem), bread.GetType());
+      Bread bread1 = new Bread();
+      Assert.AreEqual(typeof(Bread), bread1.GetType());
     }
-
   }
 }
