@@ -8,7 +8,7 @@ namespace Bakery
 {
   public class Bakery
   {
-    static void Main()
+    static void welcomePrintout ()
     {
       Console.WriteLine("             _|=|__________");
       Console.WriteLine("            /               ");
@@ -36,6 +36,11 @@ namespace Bakery
       Console.WriteLine("|      Pastries Promotion: 3x for $5         |");          
       Console.WriteLine("|      Bread Promotion: Buy 2 Get 1 Free     |");
       Console.WriteLine("|____________________________________________|");
+    }
+    static void Main()
+    {
+
+      welcomePrintout();
       Console.WriteLine("Would you like to place an order? Y/N");
       string orderResponse =  Console.ReadLine();
       if (orderResponse == "yes" || orderResponse == "Y" || orderResponse == "y") //need to implement toUpper to standardize string evaluation
