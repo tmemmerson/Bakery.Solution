@@ -56,7 +56,7 @@ namespace Bakery
         Console.WriteLine("| Loaves Total: $" + breadTotalCost +".00");
         Console.WriteLine("|___________________________________|");
         Console.WriteLine("|                                   |");
-        Console.WriteLine("| Pastries (3 ct.): "); Salu
+        Console.WriteLine("| Pastries (3 ct.): ");
         Console.WriteLine("| Pastries (1 ct.): " + pastrySingles);
         Console.WriteLine("| Total Quantity: " + pastryCount);
         Console.WriteLine("| Pastries Total: $" + pastryTotalCost +".00");
