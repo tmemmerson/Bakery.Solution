@@ -15,6 +15,11 @@ namespace Bakery.Tests
     Assert.AreEqual(2, Bakery.FreeBread(4));
     Assert.AreEqual(7, Bakery.FreeBread(14));
     }
-
+    
+    [TestMethod]
+    public void PastryBundle_CalculatePastryBundlePrice_PastryBundle()
+    {
+    Assert.AreEqual(15, Bakery.CalculatePastryBundleCost(9));
+    }
   }
 }
