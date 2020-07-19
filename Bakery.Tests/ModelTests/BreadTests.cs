@@ -10,10 +10,11 @@ namespace Bakery.Tests
   public class BakeryTests
   {
     [TestMethod]
-    public void BreadConstructor_CreateInstanceOfBread_Bread()
+    public void FreeBread_CalculateFreeBreadPromoCount_FreeBread()
     {
-      Bread bread1 = new Bread();
-      Assert.AreEqual(typeof(Bread), bread1.GetType());
+    Assert.AreEqual(2, Bakery.FreeBread(4));
+    Assert.AreEqual(7, Bakery.FreeBread(14));
     }
+
   }
 }
