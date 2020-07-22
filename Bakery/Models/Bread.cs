@@ -6,6 +6,43 @@ namespace Bakery.Models
 {
     public class BreadItem
   {
-    // properties, constructors, methods, etc. go here
+    public int BreadCount { get; set; }
+    public BreadItem(int breadCount)
+    {
+      BreadCount = breadCount;
+    }
+
+    public static int FreeBreadCalc(int breadCount)
+    {
+      int breadCountFree = breadCount / 2;
+      return breadCountFree;
+    }
+
+    public static int BreadCustomerCost(int breadCount)
+    {
+      int breadCountCost = breadCount * 5;
+      return breadCountCost;
+    }
+
+    public static int BreadTotalCount(int breadCount, int breadCountFree)
+    {
+      int totalLoaves = breadCount + breadCountFree;
+      return totalLoaves;
+    }
+    public void ReceiptPrintoutBread (int breadCount)
+    {   
+      Console.WriteLine(" ___________________________________"); 
+      Console.WriteLine("|              RECEIPT              |");
+      Console.WriteLine("|___________________________________|");
+      Console.WriteLine("| Loave(s): " + breadCount); 
+      Console.WriteLine("| Free Loave(s): " + FreeBreadCalc(breadCount));
+      Console.WriteLine("| Total Quantity: " + BreadTotalCount(breadCount, FreeBreadCalc(breadCount)));
+      Console.WriteLine("| Loaves Total: $" + BreadCustomerCost(breadCount) +".00");
+      Console.WriteLine("|___________________________________|");
+    }
+
   }
+  
   }
+
+  
