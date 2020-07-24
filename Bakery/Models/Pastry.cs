@@ -46,14 +46,14 @@ namespace Bakery.Models
       int pastryTotalCount = pastryCount;
       return pastryTotalCount;
     }
-    public void receiptPrintoutPastry (int pastryTotalCount, int pastryCountSingles, int pastryCountBundles)
+    public void ReceiptPrintoutPastry (int pastryCount)
     {  
-        Console.WriteLine("|                                   |");
-        Console.WriteLine("| Pastries (3 ct.): " + pastryCountBundles);
-        Console.WriteLine("| Pastries (1 ct.): " + pastryCountSingles);
-        Console.WriteLine("| Total Quantity: " + pastryTotalCount);
-        Console.WriteLine("| Pastries Total: $" + pastryCustomerCost +".00");
-        Console.WriteLine("|___________________________________|");
+        Console.WriteLine("                  |                                   |");
+        Console.WriteLine("                  |      Pastries (3 ct.): " + PastryBundleCalc(pastryCount) + "          |");
+        Console.WriteLine("                  |      Pastries (1 ct.): " + PastrySinglesCalc(pastryCount) + "          |");
+        Console.WriteLine("                  |      Total Quantity: " + PastryTotalCount(pastryCount) + "           |");
+        Console.WriteLine("                  |      Pastries Total: $" + PastryCustomerCost(PastrySinglesCalc(pastryCount), PastryBundleCalc(pastryCount)) +".00       |");
+        Console.WriteLine("                  |___________________________________|");
     }
   }
   }

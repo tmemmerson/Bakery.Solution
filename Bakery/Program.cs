@@ -18,7 +18,6 @@ namespace Bakery
 
       if (orderResponse == "yes" || orderResponse == "Y" || orderResponse == "y") 
       {
-
         Console.WriteLine(">>>>> How many loaves of bread would you like to purchase?"); 
         string breadResponse = Console.ReadLine(); 
         int breadCount = Int32.Parse(breadResponse); 
@@ -31,11 +30,10 @@ namespace Bakery
         PastryItem newPastryItem = new PastryItem(pastryCount); 
         Console.WriteLine(">>>>> Pastries: " + pastryResponse);
       
-
         newBreadItem.ReceiptPrintoutBread(breadCount);
+        newPastryItem.ReceiptPrintoutPastry(pastryCount);
         Salutation.salutationPrintout();
       }
-      
       else
       {
         Console.WriteLine("Please Come Again!");

@@ -31,14 +31,15 @@ namespace Bakery.Models
 
     public void ReceiptPrintoutBread (int breadCount)
     {   
-      Console.WriteLine(" ___________________________________"); 
-      Console.WriteLine("|              RECEIPT              |");
-      Console.WriteLine("|___________________________________|");
-      Console.WriteLine("| Loave(s): " + breadCount); 
-      Console.WriteLine("| Free Loave(s): " + FreeBreadCalc(breadCount));
-      Console.WriteLine("| Total Quantity: " + BreadTotalCount(breadCount, FreeBreadCalc(breadCount)));
-      Console.WriteLine("| Loaves Total: $" + BreadCustomerCost(breadCount) +".00");
-      Console.WriteLine("|___________________________________|");
+      Console.WriteLine("                   ___________________________________"); 
+      Console.WriteLine("                  |              RECEIPT              |");
+      Console.WriteLine("                  |___________________________________|");
+      Console.WriteLine("                  |                                   |");
+      Console.WriteLine("                  |      Loave(s): " + breadCount +"                 |"); 
+      Console.WriteLine("                  |      Free Loave(s): " + FreeBreadCalc(breadCount)+"             |");
+      Console.WriteLine("                  |      Total Quantity: " + BreadTotalCount(breadCount, FreeBreadCalc(breadCount))+"           |");
+      Console.WriteLine("                  |      Loaves Total: $" + BreadCustomerCost(breadCount) +".00         |");
+      Console.WriteLine("                  |___________________________________|");
     }
 
   }
