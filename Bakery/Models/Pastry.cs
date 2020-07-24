@@ -55,5 +55,7 @@ namespace Bakery.Models
         Console.WriteLine("                  |      Pastries Total: $" + PastryCustomerCost(PastrySinglesCalc(pastryCount), PastryBundleCalc(pastryCount)) +".00       |");
         Console.WriteLine("                  |___________________________________|");
     }
+
+    
   }
   }
