@@ -17,18 +17,18 @@ namespace Bakery.Models
       int breadCountFree = breadCount / 2;
       return breadCountFree;
     }
-
+    public static int BreadTotalCount(int breadCount, int breadCountFree)
+    {
+      int totalLoaves = breadCount + breadCountFree;
+      return totalLoaves;
+    }
     public static int BreadCustomerCost(int breadCount)
     {
       int breadCountCost = breadCount * 5;
       return breadCountCost;
     }
 
-    public static int BreadTotalCount(int breadCount, int breadCountFree)
-    {
-      int totalLoaves = breadCount + breadCountFree;
-      return totalLoaves;
-    }
+
     public void ReceiptPrintoutBread (int breadCount)
     {   
       Console.WriteLine(" ___________________________________"); 

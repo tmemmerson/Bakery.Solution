@@ -12,31 +12,30 @@ namespace Bakery
     static void Main()
     {
       Welcome.welcomePrintout(); 
-      Console.WriteLine("Would you like to place an order? Y/N"); //pass
-      string orderResponse =  Console.ReadLine(); //pass
-      if (orderResponse == "yes" || orderResponse == "Y" || orderResponse == "y") //pass
+
+      Console.WriteLine("Would you like to place an order? Y/N"); 
+      string orderResponse =  Console.ReadLine(); 
+
+      if (orderResponse == "yes" || orderResponse == "Y" || orderResponse == "y") 
       {
-        Console.WriteLine(">>>>>How many loaves of bread would you like to purchase?"); //pass
-        
-        string breadResponse = Console.ReadLine(); //pass
-        int breadCount = Int32.Parse(breadResponse); //pass
+
+        Console.WriteLine(">>>>> How many loaves of bread would you like to purchase?"); 
+        string breadResponse = Console.ReadLine(); 
+        int breadCount = Int32.Parse(breadResponse); 
         BreadItem newBreadItem = new BreadItem(breadCount);
+        Console.WriteLine(">>>>> Bread Loaves: " + breadResponse); 
 
-        Console.WriteLine("Bread Loaves: " + breadResponse); //pass
-        Console.WriteLine(">>>>>How many pastries would you like to purchase?"); //pass
-        
-        string pastryResponse = Console.ReadLine(); //pass
-        int pastryCount = Int32.Parse(pastryResponse); //pass
-        PastryItem newPastryItem = new PastryItem(pastryCount); //pass
-
-        Console.WriteLine("Pastries: " + pastryResponse);
+        Console.WriteLine(">>>>> How many pastries would you like to purchase?"); 
+        string pastryResponse = Console.ReadLine(); 
+        int pastryCount = Int32.Parse(pastryResponse); 
+        PastryItem newPastryItem = new PastryItem(pastryCount); 
+        Console.WriteLine(">>>>> Pastries: " + pastryResponse);
       
-        
-        
+
         newBreadItem.ReceiptPrintoutBread(breadCount);
         Salutation.salutationPrintout();
       }
-
+      
       else
       {
         Console.WriteLine("Please Come Again!");
