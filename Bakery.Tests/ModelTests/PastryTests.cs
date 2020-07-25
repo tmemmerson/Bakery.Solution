@@ -17,7 +17,7 @@ namespace Bakery.Tests
 
     Assert.AreEqual(3, newPastryItem.PastryBundleCalc(11));
     }
-    
+
     [TestMethod]
     public void PastrySingles_CalculateNumberOfSinglePastriesOwed_PastrySinglesCalc()
     {
@@ -25,7 +25,6 @@ namespace Bakery.Tests
 
     Assert.AreEqual(2, newPastryItem.PastrySinglesCalc(11));
     }
-
 
   }
 }
