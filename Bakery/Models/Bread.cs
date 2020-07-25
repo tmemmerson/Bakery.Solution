@@ -7,24 +7,27 @@ namespace Bakery.Models
     public class BreadItem
   {
     public int BreadCount { get; set; }
+
     public BreadItem(int breadCount)
     {
-      BreadCount = breadCount;
+      /* BreadCount = breadCount; */
     }
 
-    public static int FreeBreadCalc(int breadCount)
+    public int FreeBreadCalc(int breadCount)
     {
-      int breadCountFree = breadCount / 2;
+      int breadPromoRate = 2;
+      int breadCountFree = breadCount / breadPromoRate;
       return breadCountFree;
     }
-    public static int BreadTotalCount(int breadCount, int breadCountFree)
+    public int BreadTotalCount(int breadCount, int breadCountFree)
     {
       int totalLoaves = breadCount + breadCountFree;
       return totalLoaves;
     }
-    public static int BreadCustomerCost(int breadCount)
+    public int BreadCustomerCost(int breadCount)
     {
-      int breadCountCost = breadCount * 5;
+      int breadPrice = 5;
+      int breadCountCost = breadCount * breadPrice;
       return breadCountCost;
     }
 
