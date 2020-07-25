@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="250" height="250" src="https://coding-assets.s3-us-west-2.amazonaws.com/img/stickerslug-logo3.png">
+  <img width="800" height="554" src="https://coding-assets.s3-us-west-2.amazonaws.com/img/bakery-readme.png">
 </p>
 
 <br>
