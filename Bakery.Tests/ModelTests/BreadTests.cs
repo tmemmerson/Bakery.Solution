@@ -10,16 +10,14 @@ namespace Bakery.Tests
   public class BakeryTests
   {
     [TestMethod]
-    public void FreeBread_CalculateFreeBreadPromoCount_FreeBread()
+    public void FreeBread_CalculateFreeBreadPromoCount_FreeBreadCalc()
     {
-    Assert.AreEqual(2, Bakery.FreeBread(4));
-    Assert.AreEqual(7, Bakery.FreeBread(14));
+    //arrange
+    BreadItem newBreadItem = new BreadItem(14);
+
+    //assert
+    Assert.AreEqual(7, newBreadItem.FreeBreadCalc(14));
     }
-    
-    [TestMethod]
-    public void PastryBundle_CalculatePastryBundlePrice_PastryBundle()
-    {
-    Assert.AreEqual(15, Bakery.CalculatePastryBundleCost(9));
-    }
+
   }
 }
