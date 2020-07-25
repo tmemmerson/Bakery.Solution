@@ -43,8 +43,8 @@ namespace Bakery.Models
     }
     public int PastryTotalCount(int pastryCount)
     {
-/*       int pastryTotalCount = pastryCount;
-      return pastryTotalCount; */
+      int pastryTotalCount = pastryCount;
+      return pastryTotalCount;
     }
     public void ReceiptPrintoutPastry (int pastryCount)
     {  
