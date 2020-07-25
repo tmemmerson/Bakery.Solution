@@ -50,5 +50,12 @@ namespace Bakery.Tests
     Assert.AreEqual(29, newPastryItem.PastryCustomerCost(2,5));
     }
     
+    [TestMethod]
+    public void PastryTotalCount_CalculateCountOfAllPastries_PastryTotalCount()
+    {
+    PastryItem newPastryItem = new PastryItem(14);
+
+    Assert.AreEqual(14, newPastryItem.PastryTotalCount(14));
+    }
   }
 }
