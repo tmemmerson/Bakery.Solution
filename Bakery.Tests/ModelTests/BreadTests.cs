@@ -18,6 +18,5 @@ namespace Bakery.Tests
     //assert
     Assert.AreEqual(7, newBreadItem.FreeBreadCalc(14));
     }
-
   }
 }
