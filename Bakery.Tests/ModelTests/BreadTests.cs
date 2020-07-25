@@ -14,7 +14,7 @@ namespace Bakery.Tests
     public void FreeBread_CalculateFreeBreadPromoCount_FreeBreadCalc()
     {
     BreadItem newBreadItem = new BreadItem(14);
-    
+
     Assert.AreEqual(7, newBreadItem.FreeBreadCalc(14));
     }
 
@@ -35,5 +35,6 @@ namespace Bakery.Tests
 
     Assert.AreEqual(70, newBreadItem.BreadCustomerCost(14));
     }
+    
   }
 }
