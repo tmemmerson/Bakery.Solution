@@ -7,7 +7,7 @@ namespace Bakery.Models
     public class PastryItem
   {
     public int PastryCount { get; set; }
-    public int pastryCustomerCost {get; set;}
+
     public PastryItem(int pastryCount)
     {
       PastryCount = pastryCount;
