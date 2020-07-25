@@ -38,8 +38,8 @@ namespace Bakery.Models
     }
       public int PastryCustomerCost(int pastryCountSingles, int pastryCountBundles)
     {
-      int pastryCustomerCost = (pastryCountSingles * 2) + (pastryCountBundles * 5);
-      return pastryCustomerCost;
+/*       int pastryCustomerCost = (pastryCountSingles * 2) + (pastryCountBundles * 5);
+      return pastryCustomerCost; */
     }
     public int PastryTotalCount(int pastryCount)
     {
