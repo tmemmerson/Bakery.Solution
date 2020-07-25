@@ -21,8 +21,8 @@ namespace Bakery.Models
 
     public int PastrySinglesCalc(int pastryCount)
     {
-      int pastryCountSingles = pastryCount % 3;
-      return pastryCountSingles;
+ /*      int pastryCountSingles = pastryCount % 3;
+      return pastryCountSingles; */
     }
 
     public int PastryBundleCostCalc(int pastryCount)
