@@ -49,5 +49,6 @@ namespace Bakery.Tests
 
     Assert.AreEqual(29, newPastryItem.PastryCustomerCost(2,5));
     }
+    
   }
 }
