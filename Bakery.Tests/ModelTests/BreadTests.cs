@@ -12,11 +12,15 @@ namespace Bakery.Tests
     [TestMethod]
     public void FreeBread_CalculateFreeBreadPromoCount_FreeBreadCalc()
     {
-    //arrange
     BreadItem newBreadItem = new BreadItem(14);
-
-    //assert
     Assert.AreEqual(7, newBreadItem.FreeBreadCalc(14));
+    }
+
+    [TestMethod]
+    public void BreadTotalCount_CalculateTotalLoavesOwed_BreadTotalCount()
+    {
+    BreadItem newBreadItem = new BreadItem(14);
+    Assert.AreEqual(21, newBreadItem.BreadTotalCount(14,7));
     }
   }
 }
