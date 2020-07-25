@@ -17,6 +17,5 @@ namespace Bakery.Tests
 
     Assert.AreEqual(3, newPastryItem.PastryBundleCalc(11));
     }
-
   }
 }
