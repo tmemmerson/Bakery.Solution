@@ -33,8 +33,8 @@ namespace Bakery.Models
 
     public int PastrySinglesCostCalc(int pastryCount)
     {
-      int pastrySinglesCost = (pastryCount % 3) * 2;
-      return pastrySinglesCost;
+/*       int pastrySinglesCost = (pastryCount % 3) * 2;
+      return pastrySinglesCost; */
     }
       public int PastryCustomerCost(int pastryCountSingles, int pastryCountBundles)
     {
