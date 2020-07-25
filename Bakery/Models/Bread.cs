@@ -26,9 +26,9 @@ namespace Bakery.Models
     }
     public int BreadCustomerCost(int breadCount)
     {
-      int breadPrice = 5;
+/*       int breadPrice = 5;
       int breadCountCost = breadCount * breadPrice;
-      return breadCountCost;
+      return breadCountCost; */
     }
 
 
