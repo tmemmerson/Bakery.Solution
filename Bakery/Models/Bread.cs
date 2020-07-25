@@ -10,7 +10,7 @@ namespace Bakery.Models
 
     public BreadItem(int breadCount)
     {
-      /* BreadCount = breadCount; */
+      BreadCount = breadCount;
     }
 
     public int FreeBreadCalc(int breadCount)
