@@ -21,8 +21,8 @@ namespace Bakery.Models
     }
     public int BreadTotalCount(int breadCount, int breadCountFree)
     {
-      int totalLoaves = breadCount + breadCountFree;
-      return totalLoaves;
+ /*      int totalLoaves = breadCount + breadCountFree;
+      return totalLoaves; */
     }
     public int BreadCustomerCost(int breadCount)
     {
