@@ -14,7 +14,7 @@
 
 ## **DESCRIPTION**
 
-_c# Bakery order app utilizing order discounts and BOGO offers._
+_c# Bakery order app utilizing order discounts and BOGO offers. Pierre is in need of a console application to interface with his customers. He needs to convey his promotions and product pricing and allow the user to submit orders of various quantities of the baked goods he produces._
 
 <br>
 
@@ -59,6 +59,7 @@ _c# Bakery order app utilizing order discounts and BOGO offers._
 
 ![setup](https://coding-assets.s3-us-west-2.amazonaws.com/img/readme-image-3.jpg "Set up instructions")
 
+
 1. This program utilizes .NET version 3.1, and requires this framework to be pre-installed:
     * Please go to https://dotnet.microsoft.com/download/dotnet-core/3.1 and install the SDK   version 3.1 or greater patch version, but do not upgrade to a higher minor version number.
 2. Clone this repository onto your computer: https://github.com/...
@@ -75,13 +76,13 @@ _c# Bakery order app utilizing order discounts and BOGO offers._
 
 ## **Known Bugs**
 
-*EDIT* _**No Known Bugs:**7/17/2020_
+_No Known:_ 8/2/2020
 
 <br>
 
 ## **Support and contact details**
 
-_Questions, comments and concerns can be directed to the author(s) [Tristan Emmerson](tristan@stickerslug.com)_
+_Questions, comments and concerns can be directed to the author(s) [Tristan Emmerson](https://www.linkedin.com/in/tristan-emmerson/)_
 
 <br>
 
