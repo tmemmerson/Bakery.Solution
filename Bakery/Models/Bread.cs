@@ -1,18 +1,17 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using static System.Console;
 
 namespace Bakery.Models
 {
     public class BreadItem
   {
     public int BreadCount { get; set; }
-
     public BreadItem(int breadCount)
     {
       BreadCount = breadCount;
     }
-
     public int FreeBreadCalc(int breadCount)
     {
       int breadPromoRate = 2;
@@ -30,23 +29,19 @@ namespace Bakery.Models
       int breadCountCost = breadCount * breadPrice;
       return breadCountCost;
     }
-
-
     public void ReceiptPrintoutBread (int breadCount)
     {   
-      Console.WriteLine("                   ___________________________________"); 
-      Console.WriteLine("                  |              RECEIPT              |");
-      Console.WriteLine("                  |___________________________________|");
-      Console.WriteLine("                  |                                   |");
-      Console.WriteLine("                  |      Loave(s): " + breadCount +"                 |"); 
-      Console.WriteLine("                  |      Free Loave(s): " + FreeBreadCalc(breadCount)+"             |");
-      Console.WriteLine("                  |      Total Quantity: " + BreadTotalCount(breadCount, FreeBreadCalc(breadCount))+"           |");
-      Console.WriteLine("                  |      Loaves Total: $" + BreadCustomerCost(breadCount) +".00         |");
-      Console.WriteLine("                  |___________________________________|");
+      WriteLine("                   ___________________________________"); 
+      WriteLine("                  |              RECEIPT              |");
+      WriteLine("                  |___________________________________|");
+      WriteLine("                  |                                   |");
+      WriteLine("                  |      Loave(s): " + breadCount +"                 |"); 
+      WriteLine("                  |      Free Loave(s): " + FreeBreadCalc(breadCount)+"             |");
+      WriteLine("                  |      Total Quantity: " + BreadTotalCount(breadCount, FreeBreadCalc(breadCount))+"           |");
+      WriteLine("                  |      Loaves Total: $" + BreadCustomerCost(breadCount) +".00         |");
+      WriteLine("                  |___________________________________|");
     }
-
   }
-  
   }
 
   
